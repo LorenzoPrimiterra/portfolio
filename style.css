@@ -494,6 +494,16 @@ a:focus-visible, button:focus-visible {
   overflow: hidden;
   width: 100%;
 }
+.project-card--soon {
+  border-radius: var(--radius);
+  border: 1.5px dashed var(--border-strong);
+  background: transparent;
+  cursor: default;
+  opacity: 0.7;
+}
+.project-card--soon .project-card__title,
+.project-card--soon .project-card__desc { color: var(--text-faint); }
+
 .project-card__thumb { padding: 14px 14px 0; }
 .project-card__body { padding: 20px 22px 24px; }
 .project-card__title {
