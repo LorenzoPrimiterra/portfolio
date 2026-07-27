@@ -60,20 +60,18 @@
           <a href="#contact" class="btn btn--ghost">Get In Touch</a>
         </div>
         <div class="hero__socials">
-          <!-- EDIT: replace # with your real links, remove any you don't use -->
-          <a href="#" class="social-icon" aria-label="GitHub" data-lucide="github"></a>
-          <a href="#" class="social-icon" aria-label="LinkedIn" data-lucide="linkedin"></a>
-          <a href="#" class="social-icon" aria-label="Twitter / X" data-lucide="twitter"></a>
-          <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email" data-lucide="mail"></a>
+          <!-- EDIT: replace mailto address and LinkedIn URL with your real ones -->
+          <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email"><span data-lucide="mail"></span></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><span data-lucide="linkedin"></span></a>
         </div>
       </div>
 
       <div class="hero__photo-wrap">
         <div class="hero__photo glow-border">
-          <!-- EDIT: replace this placeholder with <img src="assets/images/profile.jpg" alt="Your Name"> -->
+          <!-- EDIT: replace this placeholder with <img src="profile.jpg" alt="Your Name"> -->
           <div class="placeholder-box">
             <span data-lucide="image"></span>
-            <p>Drop your photo here<br><code>assets/images/profile.jpg</code></p>
+            <p>Drop your photo here<br><code>profile.jpg</code></p>
           </div>
         </div>
       </div>
@@ -91,36 +89,15 @@
       <p class="section-eyebrow">01 / About</p>
       <h2 class="section-title">About Me</h2>
 
-      <div class="about__grid">
-        <div class="about__text">
-          <p>
-            [EDIT: Write 2-3 short paragraphs about yourself - your background, what you're passionate
-            about, and what you're currently focused on. Keep it conversational, not a resume.]
-          </p>
-          <p>
-            [EDIT: Second paragraph - maybe what drew you to this field, or what kind of problems
-            you like solving.]
-          </p>
-        </div>
-
-        <div class="about__facts">
-          <div class="fact-card">
-            <span class="fact-card__value">[X+]</span>
-            <span class="fact-card__label">Years Experience</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-card__value">[X]</span>
-            <span class="fact-card__label">Projects Shipped</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-card__value">[X]</span>
-            <span class="fact-card__label">Happy Clients</span>
-          </div>
-          <div class="fact-card">
-            <span class="fact-card__value">[City, Country]</span>
-            <span class="fact-card__label">Based In</span>
-          </div>
-        </div>
+      <div class="about__text about__text--full">
+        <p>
+          [EDIT: Write 2-3 short paragraphs about yourself - your background, what you're passionate
+          about, and what you're currently focused on. Keep it conversational, not a resume.]
+        </p>
+        <p>
+          [EDIT: Second paragraph - maybe what drew you to this field, or what kind of problems
+          you like solving.]
+        </p>
       </div>
     </div>
   </section>
@@ -135,7 +112,8 @@
 
       <div class="timeline">
 
-        <!-- EDIT: duplicate a .timeline__item block for each job, most recent first -->
+        <!-- EDIT: this is your one work entry. If you ever want to add another job later,
+             copy this whole .timeline__item block, paste it above or below, and edit the copy. -->
         <div class="timeline__item">
           <div class="timeline__marker"><span class="timeline__dot"></span></div>
           <div class="timeline__card glow-border-hover">
@@ -149,32 +127,6 @@
             </ul>
           </div>
         </div>
-
-        <div class="timeline__item">
-          <div class="timeline__marker"><span class="timeline__dot"></span></div>
-          <div class="timeline__card glow-border-hover">
-            <span class="timeline__date">[Month Year] — [Month Year]</span>
-            <h3 class="timeline__title">[Job Title]</h3>
-            <p class="timeline__org">[Company Name]</p>
-            <ul class="timeline__list">
-              <li>[What you did / built / owned - one line]</li>
-              <li>[A measurable result or responsibility]</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline__item">
-          <div class="timeline__marker"><span class="timeline__dot"></span></div>
-          <div class="timeline__card glow-border-hover">
-            <span class="timeline__date">[Month Year] — [Month Year]</span>
-            <h3 class="timeline__title">[Job Title]</h3>
-            <p class="timeline__org">[Company Name]</p>
-            <ul class="timeline__list">
-              <li>[What you did / built / owned - one line]</li>
-            </ul>
-          </div>
-        </div>
-        <!-- END duplicate block -->
 
       </div>
     </div>
@@ -190,7 +142,8 @@
 
       <div class="timeline timeline--compact">
 
-        <!-- EDIT: duplicate for each degree/school -->
+        <!-- EDIT: this is your one education entry. To add another later, copy this whole
+             .timeline__item block, paste it above or below, and edit the copy. -->
         <div class="timeline__item">
           <div class="timeline__marker"><span class="timeline__dot"></span></div>
           <div class="timeline__card glow-border-hover">
@@ -202,19 +155,6 @@
             </ul>
           </div>
         </div>
-
-        <div class="timeline__item">
-          <div class="timeline__marker"><span class="timeline__dot"></span></div>
-          <div class="timeline__card glow-border-hover">
-            <span class="timeline__date">[Year] — [Year]</span>
-            <h3 class="timeline__title">[School / Certificate Name]</h3>
-            <p class="timeline__org">[Institution Name]</p>
-            <ul class="timeline__list">
-              <li>[Detail - optional]</li>
-            </ul>
-          </div>
-        </div>
-        <!-- END duplicate block -->
 
       </div>
     </div>
@@ -228,45 +168,58 @@
       <p class="section-eyebrow">04 / Skills</p>
       <h2 class="section-title">Tools &amp; Technologies</h2>
 
-      <div class="skills__grid">
-        <!-- EDIT: rename categories and swap tag text to match your stack -->
-        <div class="skill-group">
-          <h3 class="skill-group__title">Languages</h3>
-          <div class="tag-row">
-            <span class="tag">JavaScript</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
-          </div>
+      <!-- EDIT: each icon below pulls a logo from the free Devicon CDN (devicon.dev).
+           To add/remove/swap a skill: copy a .skill-icon block, then change BOTH the
+           image filename (browse devicon.dev to find the right one) and the <span> label.
+           Full pattern: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{tech}/{tech}-original.svg -->
+      <div class="skills__icon-grid">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <span>JavaScript</span>
         </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">Frontend</h3>
-          <div class="tag-row">
-            <span class="tag">React</span>
-            <span class="tag">Next.js</span>
-            <span class="tag">Tailwind CSS</span>
-            <span class="tag">HTML / CSS</span>
-          </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+          <span>TypeScript</span>
         </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">Backend</h3>
-          <div class="tag-row">
-            <span class="tag">Node.js</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">REST APIs</span>
-          </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span>Python</span>
         </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">Tools &amp; Platforms</h3>
-          <div class="tag-row">
-            <span class="tag">Git</span>
-            <span class="tag">Docker</span>
-            <span class="tag">Vercel</span>
-            <span class="tag">AWS</span>
-          </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+          <span>React</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+          <span>Next.js</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+          <span>Tailwind</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          <span>HTML</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          <span>CSS</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+          <span>Node.js</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <span>Git</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+          <span>Docker</span>
         </div>
       </div>
     </div>
@@ -290,7 +243,7 @@
           <div class="project-card__thumb">
             <div class="placeholder-box placeholder-box--small">
               <span data-lucide="image"></span>
-              <p>assets/images/project-1.jpg</p>
+              <p>project-1.jpg</p>
             </div>
           </div>
           <div class="project-card__body">
@@ -309,7 +262,7 @@
           <div class="project-card__thumb">
             <div class="placeholder-box placeholder-box--small">
               <span data-lucide="image"></span>
-              <p>assets/images/project-2.jpg</p>
+              <p>project-2.jpg</p>
             </div>
           </div>
           <div class="project-card__body">
@@ -327,7 +280,7 @@
           <div class="project-card__thumb">
             <div class="placeholder-box placeholder-box--small">
               <span data-lucide="image"></span>
-              <p>assets/images/project-3.jpg</p>
+              <p>project-3.jpg</p>
             </div>
           </div>
           <div class="project-card__body">
@@ -345,7 +298,7 @@
           <div class="project-card__thumb">
             <div class="placeholder-box placeholder-box--small">
               <span data-lucide="image"></span>
-              <p>assets/images/project-4.jpg</p>
+              <p>project-4.jpg</p>
             </div>
           </div>
           <div class="project-card__body">
@@ -381,9 +334,9 @@
       </div>
 
       <div class="contact__socials">
-        <a href="#" class="social-icon" aria-label="GitHub" data-lucide="github"></a>
-        <a href="#" class="social-icon" aria-label="LinkedIn" data-lucide="linkedin"></a>
-        <a href="#" class="social-icon" aria-label="Twitter / X" data-lucide="twitter"></a>
+        <!-- EDIT: replace # / mailto with your real links -->
+        <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email"><span data-lucide="mail"></span></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn"><span data-lucide="linkedin"></span></a>
       </div>
     </div>
   </section>
@@ -416,7 +369,7 @@
   <div class="modal__image">
     <div class="placeholder-box">
       <span data-lucide="image"></span>
-      <p>assets/images/project-1-full.jpg</p>
+      <p>project-1-full.jpg</p>
     </div>
   </div>
 
@@ -441,10 +394,6 @@
       <li><span data-lucide="check"></span> [Feature or capability three]</li>
     </ul>
 
-    <div class="modal__actions">
-      <a href="#" class="btn btn--primary"><span data-lucide="external-link"></span> Live Demo</a>
-      <a href="#" class="btn btn--dark"><span data-lucide="github"></span> View Source</a>
-    </div>
   </div>
 </div>
 
@@ -465,7 +414,7 @@
   <div class="modal__image">
     <div class="placeholder-box">
       <span data-lucide="image"></span>
-      <p>assets/images/project-2-full.jpg</p>
+      <p>project-2-full.jpg</p>
     </div>
   </div>
 
@@ -487,10 +436,6 @@
       <li><span data-lucide="check"></span> [Feature or capability two]</li>
     </ul>
 
-    <div class="modal__actions">
-      <a href="#" class="btn btn--primary"><span data-lucide="external-link"></span> Live Demo</a>
-      <a href="#" class="btn btn--dark"><span data-lucide="github"></span> View Source</a>
-    </div>
   </div>
 </div>
 
@@ -511,7 +456,7 @@
   <div class="modal__image">
     <div class="placeholder-box">
       <span data-lucide="image"></span>
-      <p>assets/images/project-3-full.jpg</p>
+      <p>project-3-full.jpg</p>
     </div>
   </div>
 
@@ -533,10 +478,6 @@
       <li><span data-lucide="check"></span> [Feature or capability two]</li>
     </ul>
 
-    <div class="modal__actions">
-      <a href="#" class="btn btn--primary"><span data-lucide="external-link"></span> Live Demo</a>
-      <a href="#" class="btn btn--dark"><span data-lucide="github"></span> View Source</a>
-    </div>
   </div>
 </div>
 
@@ -557,7 +498,7 @@
   <div class="modal__image">
     <div class="placeholder-box">
       <span data-lucide="image"></span>
-      <p>assets/images/project-4-full.jpg</p>
+      <p>project-4-full.jpg</p>
     </div>
   </div>
 
@@ -579,10 +520,6 @@
       <li><span data-lucide="check"></span> [Feature or capability two]</li>
     </ul>
 
-    <div class="modal__actions">
-      <a href="#" class="btn btn--primary"><span data-lucide="external-link"></span> Live Demo</a>
-      <a href="#" class="btn btn--dark"><span data-lucide="github"></span> View Source</a>
-    </div>
   </div>
 </div>
 
