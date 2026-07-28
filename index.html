@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaxx | Portfolio</title>
+<meta name="description" content="Jaxx - Algorithms & Machine Learning Research Assistant. Portfolio of projects, experience, and skills.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Icons (Lucide static SVG set via CDN, no build needed) -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- NAVIGATION                                     -->
+<!-- ============================================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">Jaxx</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#experience" class="nav__link">Experience</a>
+      <a href="#education" class="nav__link">Education</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================= -->
+  <!-- HERO                                           -->
+  <!-- ============================================= -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="section-inner hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">// ALGORITHMS &amp; MACHINE LEARNING RESEARCH ASSISTANT</p>
+        <h1 class="hero__title">Hi, I'm <span class="accent">Jaxx</span>!</h1>
+        <p class="hero__subtitle">
+          I build algorithms, embedded systems, software, and plenty of things in between.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+        </div>
+        <div class="hero__socials">
+          <!-- EDIT: replace # with your real LinkedIn URL -->
+          <a href="#" class="social-icon" aria-label="LinkedIn"><span data-lucide="linkedin"></span></a>
+        </div>
+      </div>
+
+      <div class="hero__photo-wrap">
+        <div class="hero__photo glow-border">
+          <img src="profile.jpg" alt="Jaxx">
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span data-lucide="chevron-down"></span>
+    </a>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- ABOUT                                          -->
+  <!-- ============================================= -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-eyebrow">01 / About</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about__text about__text--full">
+        <p>
+          I'm a Computer Science student with a minor in Applied Mathematics at Mount Royal
+          University, with a strong interest in engineering, computer science, and the sciences
+          more broadly — always looking to pick up new skills and technologies.
+        </p>
+        <p>
+          I'm passionate, driven, and a critical thinker with a sharp eye for detail and quality.
+          I'm a proficient programmer with experience across languages like Python, C++, and C,
+          and I'm looking to grow in software engineering and computer science — contributing to
+          products worth building well. I'm always open to connecting with others in the field.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- EXPERIENCE (timeline graphic)                  -->
+  <!-- ============================================= -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <p class="section-eyebrow">02 / Experience</p>
+      <h2 class="section-title">Where I've Worked</h2>
+
+      <div class="timeline">
+
+        <!-- EDIT: this is your one work entry. If you ever want to add another job later,
+             copy this whole .timeline__item block, paste it above or below, and edit the copy. -->
+        <div class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__dot"></span></div>
+          <div class="timeline__card glow-border-hover">
+            <span class="timeline__date">May 2026 — Present</span>
+            <h3 class="timeline__title">Algorithms &amp; Machine Learning Research Assistant</h3>
+            <p class="timeline__org">Mount Royal University · Contract, Full-time</p>
+            <ul class="timeline__list">
+              <li>Built an exact CPLEX (DOcplex)-based solver for profit-maximizing Vehicle Routing Problem (VRP) variants, verified against test cases</li>
+              <li>Designed a multi-stage competing dynamic programming algorithm as a comparative benchmark against the exact solver</li>
+              <li>Built and boundary-tested the surrounding framework — imports, compatibility, and integration for additional competing algorithms</li>
+              <li>Currently developing a non-heuristic, ML-guided approach to solve a Multi-Trip Capacitated Profitable-Collection VRP (MT-CPC-VRP)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- EDUCATION (timeline graphic)                   -->
+  <!-- ============================================= -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <p class="section-eyebrow">03 / Education</p>
+      <h2 class="section-title">Academic Background</h2>
+
+      <div class="timeline timeline--compact">
+
+        <!-- EDIT: this is your one education entry. To add another later, copy this whole
+             .timeline__item block, paste it above or below, and edit the copy. -->
+        <div class="timeline__item">
+          <div class="timeline__marker"><span class="timeline__dot"></span></div>
+          <div class="timeline__card glow-border-hover">
+            <!-- EDIT: adjust if your expected graduation date changes -->
+            <span class="timeline__date">2023 — 2027</span>
+            <h3 class="timeline__title">B.S. in Computer Science, Minor in Applied Mathematics</h3>
+            <p class="timeline__org">Mount Royal University</p>
+            <ul class="timeline__list">
+              <li>3.85 GPA · President's List Recipient</li>
+              <li>2x Recipient of the Jack Kenyon Memorial Scholarship</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- SKILLS                                         -->
+  <!-- ============================================= -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="section-eyebrow">04 / Skills</p>
+      <h2 class="section-title">Tools &amp; Technologies</h2>
+
+      <!-- EDIT: each icon below pulls a logo from the free Devicon CDN (devicon.dev).
+           To add/remove/swap a skill: copy a .skill-icon block, then change BOTH the
+           image filename (browse devicon.dev to find the right one) and the <span> label.
+           Full pattern: https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{tech}/{tech}-original.svg -->
+      <div class="skills__icon-grid">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+          <span>C++</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+          <span>C</span>
+        </div>
+        <div class="skill-icon">
+          <!-- NOTE: Devicon doesn't have a dedicated Assembly/68k logo, so this uses a generic
+               chip icon from Lucide instead. Swap for a real logo if you find one you prefer. -->
+          <span data-lucide="cpu" style="width:22px;height:22px;color:var(--accent-light);"></span>
+          <span>Assembly (68k)</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+          <span>MySQL</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- PROJECTS                                       -->
+  <!-- ============================================= -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <p class="section-eyebrow">05 / Projects</p>
+      <h2 class="section-title">Things I've Built</h2>
+
+      <div class="projects__grid">
+
+        <!-- =========== PROJECT 1: Memory Allocator Visualizer =========== -->
+        <button class="project-card glow-border-hover" onclick="openModal('modal-1')">
+          <div class="project-card__thumb">
+            <img src="project-1.jpg" alt="Contiguous Memory Allocation Visualizer"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-box placeholder-box--small" style="display:none;">
+              <span data-lucide="image"></span>
+              <p>project-1.jpg</p>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Contiguous Memory Allocation Visualizer</h3>
+            <p class="project-card__desc">A teaching tool that visually simulates memory allocation strategies for university OS courses.</p>
+            <div class="tag-row tag-row--small">
+              <span class="tag tag--mono">C</span>
+              <span class="tag tag--mono">SDL2</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- =========== PROJECT 2: Hexapod Robot =========== -->
+        <button class="project-card glow-border-hover" onclick="openModal('modal-2')">
+          <div class="project-card__thumb">
+            <img src="project-2.jpg" alt="Hexapod Robot"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-box placeholder-box--small" style="display:none;">
+              <span data-lucide="image"></span>
+              <p>project-2.jpg</p>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Hexapod Robot</h3>
+            <p class="project-card__desc">A hand-built six-legged robot, from schematic and soldering to a 3D-printed shell — now in active software development.</p>
+            <div class="tag-row tag-row--small">
+              <span class="tag tag--mono">ESP32-CAM</span>
+              <span class="tag tag--mono">Embedded</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- =========== PROJECT 3: Custom Game UI Engine =========== -->
+        <button class="project-card glow-border-hover" onclick="openModal('modal-3')">
+          <div class="project-card__thumb">
+            <img src="project-3.jpg" alt="Custom Game UI Engine"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="placeholder-box placeholder-box--small" style="display:none;">
+              <span data-lucide="image"></span>
+              <p>project-3.jpg</p>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Custom Game UI Engine</h3>
+            <p class="project-card__desc">A custom UI and engine foundation for a future game, built in Python with hand-built animation, input, and rendering systems.</p>
+            <div class="tag-row tag-row--small">
+              <span class="tag tag--mono">Python</span>
+              <span class="tag tag--mono">Pygame</span>
+            </div>
+          </div>
+        </button>
+
+        <!-- =========== PROJECT 4: Coming Soon (not clickable - no modal) =========== -->
+        <!-- EDIT: once you're ready to reveal this project, replace this whole block with a
+             <button class="project-card glow-border-hover" onclick="openModal('modal-4')"> ...
+             (same shape as the buttons above) - the matching #modal-4 popup already exists
+             further down the page, just fill in its placeholder text. -->
+        <div class="project-card project-card--soon">
+          <div class="project-card__thumb">
+            <div class="placeholder-box placeholder-box--small">
+              <span data-lucide="hourglass"></span>
+              <p>Coming soon</p>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Coming Soon</h3>
+            <p class="project-card__desc">A new project is in the works — check back soon.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- CONTACT                                        -->
+  <!-- ============================================= -->
+  <section class="section" id="contact">
+    <div class="section-inner section-inner--narrow">
+      <p class="section-eyebrow">06 / Contact</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact__text">
+        Whether it's an opportunity, a question about one of these projects, or a request for
+        my resume — feel free to reach out. I'm always happy to connect.
+      </p>
+
+      <div class="contact__actions">
+        <!-- EDIT: replace # with your real LinkedIn URL -->
+        <a href="#" class="btn btn--primary">
+          <span data-lucide="linkedin"></span> Connect on LinkedIn
+        </a>
+      </div>
+
+      <div class="contact__socials">
+        <!-- EDIT: replace # with your real LinkedIn URL -->
+        <a href="#" class="social-icon" aria-label="LinkedIn"><span data-lucide="linkedin"></span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Jaxx</p>
+</footer>
+
+<!-- ============================================= -->
+<!-- PROJECT MODALS (popups)                        -->
+<!-- ============================================= -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+
+<!-- MODAL 1 -->
+<div class="modal" id="modal-1">
+  <div class="modal__glow"></div>
+  <div class="modal__header">
+    <h3 class="modal__title"><span data-lucide="star"></span> Contiguous Memory Allocation Visualizer</h3>
+    <button class="modal__close" onclick="closeModal()" aria-label="Close">
+      <span data-lucide="x"></span>
+    </button>
+  </div>
+  <div class="modal__meta">
+    <!-- EDIT: fill in when you built this -->
+    <span class="modal__date"><span data-lucide="calendar"></span> 2026</span>
+    <span class="badge">TEACHING &amp; LEARNING TOOL</span>
+  </div>
+
+  <div class="modal__image">
+    <video src="project-1-full.mp4" autoplay loop muted playsinline
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"></video>
+    <div class="placeholder-box" style="display:none;">
+      <span data-lucide="image"></span>
+      <p>project-1-full.mp4</p>
+    </div>
+  </div>
+
+  <div class="modal__body">
+    <p class="modal__desc">
+      A visual teaching and learning tool built for university-level Operating Systems courses.
+      It simulates contiguous memory allocation with customizable or randomized block sizes,
+      letting instructors demonstrate — and students explore — allocation strategies side by
+      side alongside real-time allocation metrics.
+    </p>
+
+    <h4 class="modal__section-title">Tech Stack</h4>
+    <div class="tag-row">
+      <span class="tag tag--mono">C</span>
+      <span class="tag tag--mono">SDL2</span>
+    </div>
+
+    <h4 class="modal__section-title"><span data-lucide="sparkles"></span> Key Features</h4>
+    <ul class="modal__features">
+      <li><span data-lucide="check"></span> Visual simulation of contiguous memory allocation with configurable or random block sizes</li>
+      <li><span data-lucide="check"></span> Multiple allocation strategies, including Best-Fit and First-Fit, for side-by-side comparison</li>
+      <li><span data-lucide="check"></span> Process clearing/deallocation with real-time allocation metrics</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div class="modal" id="modal-2">
+  <div class="modal__glow"></div>
+  <div class="modal__header">
+    <h3 class="modal__title"><span data-lucide="star"></span> Hexapod Robot</h3>
+    <button class="modal__close" onclick="closeModal()" aria-label="Close">
+      <span data-lucide="x"></span>
+    </button>
+  </div>
+  <div class="modal__meta">
+    <!-- EDIT: fill in when you started this -->
+    <span class="modal__date"><span data-lucide="calendar"></span> 2026</span>
+    <span class="badge">IN PROGRESS</span>
+  </div>
+
+  <div class="modal__image">
+    <video src="project-2-full.mp4" autoplay loop muted playsinline
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"></video>
+    <div class="placeholder-box" style="display:none;">
+      <span data-lucide="image"></span>
+      <p>project-2-full.mp4</p>
+    </div>
+  </div>
+
+  <div class="modal__body">
+    <p class="modal__desc">
+      A six-legged robot built entirely from scratch — hand-designed schematic, soldered
+      electronics, and a 3D-printed shell. Each leg has 3 degrees of freedom, driven by 18 MG
+      servo motors through PCA9685 driver boards, all controlled by an onboard ESP32-CAM.
+      Software work is ongoing. I'm developing and testing different gait patterns to see how
+      movement should adapt across different terrain, and building out remote video streaming
+      from the onboard camera to a PC for real-time object detection — with room to bring in
+      ML for terrain-adaptive gait selection down the line.
+    </p>
+
+    <h4 class="modal__section-title">Tech Stack</h4>
+    <div class="tag-row">
+      <span class="tag tag--mono">ESP32-CAM</span>
+      <span class="tag tag--mono">Embedded C/C++</span>
+      <span class="tag tag--mono">Schematic Design</span>
+      <span class="tag tag--mono">3D Printing</span>
+    </div>
+
+    <h4 class="modal__section-title"><span data-lucide="sparkles"></span> Key Features</h4>
+    <ul class="modal__features">
+      <li><span data-lucide="check"></span> 3 degrees of freedom (DOF) per leg, 18 MG servos total, driven via PCA9685 PWM driver boards over I2C</li>
+      <li><span data-lucide="check"></span> Fully custom, hand-soldered electronics and schematic — no pre-built robot kit or PCB</li>
+      <li><span data-lucide="check"></span> ESP32-CAM as the onboard controller and camera source for future object detection and streaming</li>
+      <li><span data-lucide="check"></span> Actively developing and testing gait algorithms for adaptive locomotion across different terrain</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- MODAL 3 -->
+<div class="modal" id="modal-3">
+  <div class="modal__glow"></div>
+  <div class="modal__header">
+    <h3 class="modal__title"><span data-lucide="star"></span> Custom Game UI Engine</h3>
+    <button class="modal__close" onclick="closeModal()" aria-label="Close">
+      <span data-lucide="x"></span>
+    </button>
+  </div>
+  <div class="modal__meta">
+    <!-- EDIT: fill in when you started this -->
+    <span class="modal__date"><span data-lucide="calendar"></span> 2023</span>
+    <span class="badge">SOLO PROJECT</span>
+    <span class="badge">FRAMEWORK LEARNING</span>
+  </div>
+
+  <div class="modal__image">
+    <video src="project-3-full.mp4" autoplay loop muted playsinline
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"></video>
+    <div class="placeholder-box" style="display:none;">
+      <span data-lucide="image"></span>
+      <p>project-3-full.mp4</p>
+    </div>
+  </div>
+
+  <div class="modal__body">
+    <p class="modal__desc">
+      A UI and engine foundation for a future game, built in Python with Pygame handling the
+      low-level window and event loop. Everything else is custom: a sprite-sheet-driven
+      animation system, hand-tuned mouse sensitivity, manual blitting for on-screen rendering,
+      collision detection, and scene/state management — all wrapped in original UI graphics
+      with hover-reactive menus. It's also an exercise in structuring a larger Python codebase,
+      splitting logic across modular files so it stays fast and maintainable as a foundation
+      to build the actual game on.
+    </p>
+
+    <h4 class="modal__section-title">Tech Stack</h4>
+    <div class="tag-row">
+      <span class="tag tag--mono">Python</span>
+      <span class="tag tag--mono">Pygame</span>
+    </div>
+
+    <h4 class="modal__section-title"><span data-lucide="sparkles"></span> Key Features</h4>
+    <ul class="modal__features">
+      <li><span data-lucide="check"></span> Custom sprite-sheet animation system and manual on-screen blitting for rendering</li>
+      <li><span data-lucide="check"></span> Hand-tuned mouse sensitivity, collision detection, and scene/state management, all built from scratch</li>
+      <li><span data-lucide="check"></span> Hover-reactive menu UI (lighting + scale-up on hover) with original graphics, plus a custom save system</li>
+      <li><span data-lucide="check"></span> Codebase split across modular files, structured for performance and to scale into a full game</li>
+    </ul>
+
+  </div>
+</div>
+
+<!-- MODAL 4 -->
+<div class="modal" id="modal-4">
+  <div class="modal__glow"></div>
+  <div class="modal__header">
+    <h3 class="modal__title"><span data-lucide="star"></span> [Project Name]</h3>
+    <button class="modal__close" onclick="closeModal()" aria-label="Close">
+      <span data-lucide="x"></span>
+    </button>
+  </div>
+  <div class="modal__meta">
+    <span class="modal__date"><span data-lucide="calendar"></span> [Month Year]</span>
+    <span class="badge">FEATURED</span>
+  </div>
+
+  <div class="modal__image">
+    <div class="placeholder-box">
+      <span data-lucide="image"></span>
+      <p>project-4-full.jpg</p>
+    </div>
+  </div>
+
+  <div class="modal__body">
+    <p class="modal__desc">
+      [EDIT: 2-4 sentence description of the project.]
+    </p>
+
+    <h4 class="modal__section-title">Tech Stack</h4>
+    <div class="tag-row">
+      <span class="tag tag--mono">TypeScript</span>
+      <span class="tag tag--mono">Docker</span>
+      <span class="tag tag--mono">AWS</span>
+    </div>
+
+    <h4 class="modal__section-title"><span data-lucide="sparkles"></span> Key Features</h4>
+    <ul class="modal__features">
+      <li><span data-lucide="check"></span> [Feature or capability one]</li>
+      <li><span data-lucide="check"></span> [Feature or capability two]</li>
+    </ul>
+
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
