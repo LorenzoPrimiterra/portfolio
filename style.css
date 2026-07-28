@@ -52,7 +52,7 @@ body {
      "fixed" gives a subtle parallax feel as you scroll - remove it if you don't want that.
      Want a gradient instead? Try:
        background: linear-gradient(180deg, #05060b, #10152b); */
-  background: var(--bg);
+  background: var(--bg) url('background.jpg') center/cover fixed no-repeat;
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
