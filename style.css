@@ -52,7 +52,7 @@ body {
      "fixed" gives a subtle parallax feel as you scroll - remove it if you don't want that.
      Want a gradient instead? Try:
        background: linear-gradient(180deg, #05060b, #10152b); */
-  background: var(--bg) url('background.jpg') center/cover fixed no-repeat;
+  background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
@@ -503,9 +503,9 @@ a:focus-visible, button:focus-visible {
 .project-card--soon {
   border-radius: var(--radius);
   border: 1.5px dashed var(--border-strong);
-  background: transparent;
+  background: rgba(5, 6, 11, 0.65);
   cursor: default;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .project-card--soon .project-card__title,
 .project-card--soon .project-card__desc { color: var(--text-faint); }
@@ -618,7 +618,8 @@ a:focus-visible, button:focus-visible {
 .modal__meta {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   padding: 10px 24px 0;
 }
 .modal__date {
