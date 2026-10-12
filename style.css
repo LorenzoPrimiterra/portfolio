@@ -637,3 +637,4 @@ body.modal-open { overflow: hidden; }
   .about__facts { grid-template-columns: 1fr 1fr; }
   .section { padding: 80px 0; }
 }
+.social-icon .brand-icon { width: 18px; height: 18px; fill: currentColor; }
